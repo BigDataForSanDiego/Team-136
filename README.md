@@ -41,8 +41,8 @@
 
 
 
-#### Team Coordinator GitHub Username: Victortepordei
+#### Team Coordinator GitHub Username: VictorTepordei
 
 
-#### Team Members `YOUR TEAM MEMBERS NAME & GITHUB USERNAME HERE`
+#### Team Members: Leo Findley-lfindley, Matthew Tran-matttwh0, Liam Seidel-seidelliam
 
