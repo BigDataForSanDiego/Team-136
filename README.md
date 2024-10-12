@@ -40,7 +40,9 @@
 > How can we leverage big (geospatial) data analytics and AI to improve access to resources that mitigate the impact of environmental factors, i.e. pollution, on health disparities?
 
 
-#### Team Coordinator GitHub Username: `YOUR TEAM COORDINATOR GITHUB USERNAME HERE`
+
+#### Team Coordinator GitHub Username: Victortepordei
+
 
 #### Team Members `YOUR TEAM MEMBERS NAME & GITHUB USERNAME HERE`
 
