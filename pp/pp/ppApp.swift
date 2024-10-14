@@ -14,7 +14,7 @@ struct ppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                Listview()
+                ListView()
             }
         }
     }
