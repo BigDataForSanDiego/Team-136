@@ -9,10 +9,21 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            //call the listrowview in other file
+            ListRowView()
+        }
+        //title
+        .navigationTitle("Prescription Pals 💊")
     }
 }
 
-#Preview {
-    ListView()
+struct ListView_Previews: PreviewProvider{
+    static var previews: some View {
+        NavigationView{
+            ListView()
+        }
+    }
 }
+
+

@@ -13,6 +13,7 @@ import SwiftUI
 struct ppApp: App {
     var body: some Scene {
         WindowGroup {
+            //make sure entire app is in navigation view
             NavigationView {
                 ListView()
             }
