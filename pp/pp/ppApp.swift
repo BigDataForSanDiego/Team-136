@@ -7,11 +7,15 @@
 
 import SwiftUI
 
+
+
 @main
 struct ppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                Listview()
+            }
         }
     }
 }
