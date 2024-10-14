@@ -9,9 +9,19 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
+        
+        //store sentence values of todo list
+        @State var items: [String] = [
+            "This is the first title",
+            "This is the second",
+            "Third"
+        ]
+        
         List {
-            //call the listrowview in other file
-            ListRowView()
+            //iterate through items array
+            ForEach(items, id: \.self){ item in
+                ListRowView(title: item)
+            }
         }
         //title
         .navigationTitle("Prescription Pals 💊")

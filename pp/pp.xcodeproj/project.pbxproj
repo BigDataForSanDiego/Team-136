@@ -15,6 +15,7 @@
 		89CFF3792CBB2A7400C2AD63 /* ppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF3782CBB2A7400C2AD63 /* ppUITestsLaunchTests.swift */; };
 		89CFF3892CBCFA4800C2AD63 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF3882CBCFA4800C2AD63 /* ListView.swift */; };
 		89CFF38B2CBCFBFB00C2AD63 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF38A2CBCFBFB00C2AD63 /* ListRowView.swift */; };
+		89CFF38D2CBCFE3400C2AD63 /* AddMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF38C2CBCFE3400C2AD63 /* AddMedication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		89CFF3782CBB2A7400C2AD63 /* ppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89CFF3882CBCFA4800C2AD63 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		89CFF38A2CBCFBFB00C2AD63 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		89CFF38C2CBCFE3400C2AD63 /* AddMedication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				89CFF3882CBCFA4800C2AD63 /* ListView.swift */,
 				89CFF38A2CBCFBFB00C2AD63 /* ListRowView.swift */,
+				89CFF38C2CBCFE3400C2AD63 /* AddMedication.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CFF38D2CBCFE3400C2AD63 /* AddMedication.swift in Sources */,
 				89CFF3892CBCFA4800C2AD63 /* ListView.swift in Sources */,
 				89CFF35C2CBB2A7200C2AD63 /* ppApp.swift in Sources */,
 				89CFF38B2CBCFBFB00C2AD63 /* ListRowView.swift in Sources */,

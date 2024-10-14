@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ListRowView: View {
+    //makes title dynamic
+    let title: String
+    
     var body: some View {
         HStack{
             Image(systemName: ("checkmark.circle"))
-            Text("Add medication")
+            Text(title)
             Spacer()
         }
     }
 }
 
 #Preview {
-    ListRowView()
+    
+    ListRowView(title: "This is the first title")
 }
