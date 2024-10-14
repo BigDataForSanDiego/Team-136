@@ -16,6 +16,7 @@ struct ppApp: App {
             //make sure entire app is in navigation view
             NavigationView {
                 ListView()
+                
             }
         }
     }
