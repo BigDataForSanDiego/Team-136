@@ -18,7 +18,7 @@ struct AddMedication: View {
     }
     
         var body: some View {
-            let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            let color = #colorLiteral(red: 0.8039215803, green: 0.9999215803, blue: 0.8039215803, alpha: 1)
         //prompt user to input information
         
 
@@ -32,7 +32,7 @@ struct AddMedication: View {
                     //background color of text field
                     .background(Color(color))
                     //makes it round
-                    .cornerRadius(10)
+                    .cornerRadius(2)
                     
                 
                 Button(action: {
