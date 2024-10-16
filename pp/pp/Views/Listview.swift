@@ -7,42 +7,48 @@
 
 import SwiftUI
     //please
-struct ListView: View {
-    var body: some View {
-        
-        //store sentence values of todo list
-        @State var items: [String] = [
-            "Medicine added 1",
-            "Medicine added 2",
-            "testing new branch"
-        ]
-        VStack{
-            
-            //call to addmedication file
-            AddMedication()
-            
-            List {
+
+    struct ListView: View {
+        var body: some View {
+            var newItem: String =                 AddMedication().addMed()
+            //store sentence values of todo list
+
+         
+            @State var items: [String] = [
+                "Medicine added 1",
+                "Medicine added 2",
+                "testing new branch",
+                newItem
+            ]
+            VStack{
+                AddMedication()
+                //items.append(newItem) (Items may need to be moved into AddMedication
+                //call to addmedication file
                 
-                //iterate through items array
-                ForEach(items, id: \.self){ item in
-                    ListRowView(title: item)
+                List {
+                    //iterate through items array
+                    ForEach(items, id: \.self){ item in
+                        ListRowView(title: item)
+                    }
+                    .listStyle(PlainListStyle())
+                    
+                       
                 }
-                .listStyle(PlainListStyle())
                 
-                }
-            //title
-            .navigationTitle("Prescription Pals 💊")
+                //title
+                .navigationTitle("Prescription Pals 💊")
             }
         }
     }
 
-struct ListView_Previews: PreviewProvider{
-    static var previews: some View {
-        NavigationView{
-            ListView()
-            
+    
+    struct ListView_Previews: PreviewProvider{
+        static var previews: some View {
+            NavigationView{
+                ListView()
+            }
         }
     }
-}
+
 
 
