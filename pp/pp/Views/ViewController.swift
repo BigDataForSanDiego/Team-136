@@ -18,3 +18,4 @@ class ViewController: UIViewController{
         
     }
 }
+//TODO: figure out how to call function and test it, read documentation
