@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-
+    
 struct ListView: View {
     var body: some View {
-        
         
         //store sentence values of todo list
         @State var items: [String] = [
@@ -17,27 +16,25 @@ struct ListView: View {
             "Medicine added 2",
             "testing new branch"
         ]
-        
-        
-        List {
-            //iterate through items array
-            ForEach(items, id: \.self){ item in
-                ListRowView(title: item)
-            }
-            .listStyle(PlainListStyle())
+        VStack{
             
-
+            //call to addmedication file
+            AddMedication()
+            
+            List {
+                
+                //iterate through items array
+                ForEach(items, id: \.self){ item in
+                    ListRowView(title: item)
+                }
+                .listStyle(PlainListStyle())
+                
+                }
+            //title
+            .navigationTitle("Prescription Pals 💊")
+            }
         }
-        //title
-        .navigationTitle("Prescription Pals 💊")
-        .navigationBarItems(
-            leading: EditButton(),
-            trailing:
-                NavigationLink("Add", destination: AddMedication())
-        )
-       
     }
-}
 
 struct ListView_Previews: PreviewProvider{
     static var previews: some View {
