@@ -11,7 +11,7 @@ struct AddMedication: View {
     
         //Textfield
         @State var textFieldText: String = ""
-        @State var buttonColor: Color = Color.blue
+        @State var buttonColor: Color = Color.green
         var body: some View {
             let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         //prompt user to input information
@@ -19,6 +19,8 @@ struct AddMedication: View {
             //TODO: put the button next to the text field and add this file to ListView
             HStack {
                 TextField("Add Medication", text: $textFieldText)
+                    .padding(.leading, 15.0)
+                    
                     //makes text field taller
                     .frame(height:55)
                     //background color of text field
@@ -28,7 +30,7 @@ struct AddMedication: View {
                     
                 
                 Button(action: {
-                    buttonColor = (buttonColor == Color.blue) ? Color.red : Color.blue
+                    buttonColor = (buttonColor == Color.blue) ? Color.green : Color.blue
                 }, label: {
                     Label("", systemImage: "arrowshape.up.circle.fill")
                         .cornerRadius(10)
