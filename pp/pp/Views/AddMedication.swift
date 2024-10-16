@@ -9,15 +9,21 @@ import SwiftUI
 
 struct AddMedication: View {
     
-        //Textfield
-        @State var textFieldText: String = ""
+    //Textfield
+    @State var textFieldText: String = "new med"
         @State var buttonColor: Color = Color.green
+    
+    func addMed() -> String{
+        return textFieldText
+    }
+    
         var body: some View {
             let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         //prompt user to input information
         
+
             //TODO: put the button next to the text field and add this file to ListView
-            HStack {
+             HStack {
                 TextField("Add Medication", text: $textFieldText)
                     .padding(.leading, 15.0)
                     
@@ -39,9 +45,7 @@ struct AddMedication: View {
                         .dynamicTypeSize(.xxxLarge)
                 })
             }
-            .padding()
-                
-        
+             .padding()
     }
 }
 
