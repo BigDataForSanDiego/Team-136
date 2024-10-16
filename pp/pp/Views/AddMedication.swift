@@ -13,16 +13,17 @@ struct AddMedication: View {
         @State var textFieldText: String = ""
         let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         //prompt user to input information
-        ScrollView {
+        
             //TODO: put the button next to the text field and add this file to ListView
-            VStack {
+            HStack {
                 TextField("Add Medication", text: $textFieldText)
                     //makes text field taller
-                    .frame(height: 55)
+                    .frame(height:55)
                     //background color of text field
                     .background(Color(color))
                     //makes it round
                     .cornerRadius(10)
+                    
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Label("", systemImage: "arrowshape.up.circle.fill")
@@ -31,9 +32,9 @@ struct AddMedication: View {
                         .dynamicTypeSize(.xxxLarge)
                 })
             }
-            .padding(14)
+            .padding()
                 
-        }
+        
     }
 }
 
