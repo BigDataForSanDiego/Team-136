@@ -42,7 +42,7 @@ struct AddMedication: View {
 struct AddMedication_Previews: PreviewProvider{
     static var previews: some View {
         NavigationView{
-            AddMedication(textFieldText: .constant("Sample Text"))
+            AddMedication(textFieldText: .constant(""))
         }
     }
 }
