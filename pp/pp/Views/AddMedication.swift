@@ -10,15 +10,15 @@ import SwiftUI
 struct AddMedication: View {
     
     //Textfield
-    @State var textFieldText: String = "new med"
-        @State var buttonColor: Color = Color.green
+    @Binding var textFieldText: String
+       
     
     func addMed() -> String{
         return textFieldText
     }
     
         var body: some View {
-            let color = #colorLiteral(red: 0.8039215803, green: 0.9999215803, blue: 0.8039215803, alpha: 1)
+            let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         //prompt user to input information
         
 
@@ -32,18 +32,8 @@ struct AddMedication: View {
                     //background color of text field
                     .background(Color(color))
                     //makes it round
-                    .cornerRadius(2)
-                    
-                
-                Button(action: {
-                    buttonColor = (buttonColor == Color.blue) ? Color.green : Color.blue
-                }, label: {
-                    Label("", systemImage: "arrowshape.up.circle.fill")
-                        .cornerRadius(10)
-                        .foregroundColor(buttonColor)
-                        .font(.largeTitle)
-                        .dynamicTypeSize(.xxxLarge)
-                })
+                    .cornerRadius(2)                
+               
             }
              .padding()
     }
@@ -52,7 +42,7 @@ struct AddMedication: View {
 struct AddMedication_Previews: PreviewProvider{
     static var previews: some View {
         NavigationView{
-            AddMedication()
+            AddMedication(textFieldText: .constant("Sample Text"))
         }
     }
 }
